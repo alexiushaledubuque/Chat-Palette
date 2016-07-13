@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- App main module for Chat Palatte & test for git -->
-<html ng-app='MainController'>
+<html ng-app='MainController' ng-controller="TitleController">
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width'>
-  <title>Chat Palette</title>
+  <title>{{ page.title() }}</title>
   <!-- required file for date/time functionality -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
@@ -12,7 +12,7 @@
   <script src='styles/styles.css'></script>
 </head>
 <body>
-  <h1>WELCOME TO CHAT PALETTE</h1>
+  <h1>{{ page.title() }}</h1>
   <!-- render templates to this main html -->
   <div ng-view></div>
   <script src='lib/angular/angular.js'></script>
