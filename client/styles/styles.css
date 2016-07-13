@@ -1,3 +1,7 @@
+/**
+ * Default styles 
+ */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,8 +24,10 @@ time, mark, audio, video {
 }
 
 
- /* HTML5 display-role reset for older browsers */
- 
+/**
+ * HTML5 display-role reset for older browsers
+ */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -55,22 +61,29 @@ table {
 	border-spacing: 0;
 }
 
+/**
+ * Chatroom Styles - Container styles for workspace
+ */
+
+.login .container {
+	margin: 0 auto;
+	width: 980px;
+	text-align: center;
+}
+
+/**
+ * Body tag styles
+ */
+
 body {
-  /*background: url('assets/ff.jpe/*g') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
   font-family: "Times New Roman", Times, serif;
   height: 100%;
   width: 100%;
 }
 
-.container {
-	margin: 0 auto;
-	width: 980px;
-	text-align: center;
-}
+/**
+ * Headers
+ */
 
 h1 {
 	float: left;
@@ -79,25 +92,56 @@ h1 {
 	padding-right: 232px;
 }
 
+/**
+ * Chatroom top bar 
+ */
+
 .chatroom {
 	margin-bottom: 20px;
 }
 
-.buttons {
+/**
+ * Chat color swatch 
+ */
+
+.login .buttons {
 	padding: 20px 0 20px 10px;
 	height: 40%;
 	width: 99%;
 	background-color: #f2f2f2;
 	border-radius: 5px;
-  background: #8e9eab; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#8e9eab, #eef2f3); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#8e9eab, #eef2f3); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#8e9eab, #eef2f3); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#8e9eab, #eef2f3); /* Standard syntax */
+
+ /** 
+ 	*	Individual browser styles
+  * For browsers that do not support gradients 
+  */
+background: #8e9eab; 
+
+/**
+ * For Safari 5.1 to 6.0 
+ */
+background: -webkit-linear-gradient(#8e9eab, #eef2f3); 
+
+/**
+ * For Opera 11.1 to 12.0
+ */
+background: -o-linear-gradient(#8e9eab, #eef2f3); 
+
+/**
+ * For Firefox 3.6 to 15 
+ */
+background: -moz-linear-gradient(#8e9eab, #eef2f3); 
+
+/**
+ * Standard syntax 
+ */
+background: linear-gradient(#8e9eab, #eef2f3);
 }
 
-#red {
-	background-color: #CD5C5C;
+ /**
+  * Same styles for each navigation button 
+  */
+.chatroom button{
 	border: none;
   color: white;
   padding: 15px 32px;
@@ -106,44 +150,34 @@ h1 {
   display: inline-block;
   font-size: 16px;
   border-radius: 4px;
+}
+
+/**
+ * Set the background color of each button in nav bar
+ */
+#red {
+	background-color: #CD5C5C;
 }
 
 #blue {
 	background-color: #0000cc;
-	border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
 }
 
 #green {
 	background-color: #006600;
-	border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
 }
 
 #yellow {
 	background-color: #e6e600;
-	border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
 }
 
+/**
+ * Display chatroom messages
+ */
+
+/**
+ * Test data
+ */
 .msg {
 	height: 100%;
 	width: 100%;
@@ -154,6 +188,9 @@ h1 {
 	margin-bottom: 5px;
 }
 
+/**
+ * Container for all chat messages from the server
+ */
 #messagecontainer {
 	background-color: #ebf0fa;
 	border-radius: 10px;
@@ -163,14 +200,18 @@ h1 {
 	
 }
 
+
 .messagelisting {
 	float: left;
 	background-color: gray;
 }
 
+/**
+ * Display current chat messages from the server
+ */
 .singlemessage {
 	text-align: left;
-	font-size: 25px;
+	font-size: 23px;
 	height:40px;
 	width: 93%;
 	margin: 20px;
@@ -182,6 +223,9 @@ h1 {
 	padding: 10px 10px 5px 10px;
 }
 
+/**
+ * Input area for the new chat message to the stream
+ */
 #sendmessage {
 	width: 75%;
 	padding: 15px 32px;
@@ -190,6 +234,9 @@ h1 {
 	font-size: 20px;
 }
 
+/**
+ * Button to send the new chat message to the stream
+ */
 #sendmsg {
   padding: 15px 32px;
   text-align: center;
@@ -200,11 +247,17 @@ h1 {
   font-family: "Times New Roman", Times, serif;
 }
 
+/**
+ * Add correct spacing between color radio buttons
+ */
 #addingspace {
 	letter-spacing: 2px;
 	font-size: 22px;
 }
 
+/**
+ * Send new chat message container
+ */
 .sendoptions {
 	font-size: 20px;
 	color: #595959;
