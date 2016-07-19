@@ -1,0 +1,14 @@
+<!-- contains the main view for our app and displays/allows interaction with the chatroom -->
+<div class='container' ng-init='getMessages()'>
+<section class='buttons'>
+  <nav class='chatroom'>
+    <h1>CHATROOMS</h1>
+    <!-- Here are our buttons for filtering -->
+    <button class='button' id='all' ng-click='allFilter()'>All</button>
+    <button class='button' id='red' ng-click='redFilter()'>Red</button>
+    <button class='button' id='blue' ng-click='blueFilter()'>Blue</button>
+    <button class='button' id='green' ng-click='greenFilter()'>Green</button>
+    <button class='button' id='yellow' ng-click='yellowFilter()'>Yellow</button>
+  </nav>
+  <h2>Below are all the {{ color }} messages:</h2>
+</section>
