@@ -49,6 +49,21 @@ angular.module('app.chat', [])
   };
 
   /**
+   *   Logs user out by hitting /logout endpoint in user and redirects to login screen
+   */
+
+  $scope.logout = function() {
+    console.log('running logout function');
+    Chat.logout()
+      .then(function() {
+        $location.path('/');
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  };
+
+  /**
   * Filters all the messages based on color property and button clicked
   */
   

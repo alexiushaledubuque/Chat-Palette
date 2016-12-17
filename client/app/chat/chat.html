@@ -1,4 +1,5 @@
-<br>
+<!-- Chat template - displays all chat messages, gives the option to add a message to the stream,
+     or select a specific view of chat messages by color -->
 <div class='container' ng-init='getMessages()'>
 <section class='buttons'>
   <nav class='chatroom'>
@@ -8,6 +9,7 @@
     <button class='button' id='blue' ng-click='blueFilter()'>Blue</button>
     <button class='button' id='green' ng-click='greenFilter()'>Green</button>
     <button class='button' id='yellow' ng-click='yellowFilter()'>Yellow</button>
+    <button class='button' id='logout' ng-click='logout()'>Logout</button>
   </nav>
   <h2>Below are all the {{ color }} messages:</h2>
 </section>
@@ -15,19 +17,17 @@
   <div id='messagecontainer'>
    <section class='scrollable'>
     <div class='msg'>
+
       <!-- Display messages in user/content/created_at format -->
       <div id='messages'>
-      <!-- <br><br><br><br><br> -->
       <ul>
        <li class='singlemessage' ng-repeat='message in messagU' ng-if="color === message.color || color === ''" ng-style="{ background: message.color }"> 
            
             <p> {{ message.username }}:   {{ message.content }} at
             {{ message.created_at | date: 'yyyy-MM-dd HH:mm:ss' }}
-            <!-- where are you? {{ moment(message.created_at).fromNow() }} -->
             </p>
         </li>
       </ul>
-      <!-- </div> -->
      </div>
     </div>
    </section>

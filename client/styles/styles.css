@@ -1,5 +1,7 @@
 /**
- * Default styles for Chat Palette
+ * Default styles for Chat Palette - A CSS Reset (or “Reset CSS”) is a short, 
+ * often compressed (minified) set of CSS rules that resets the styling of all 
+ * HTML elements to a consistent baseline. Sample from Eric Meyer's CSS Reset 2.0
  */
 
 html, body, div, span, applet, object, iframe,
@@ -63,7 +65,7 @@ table {
 }
 
 /**
- * Body container - affecting several templates
+ * START - CHAT PALETTE STYLING Body container - in index.html; but used in every template
  */
 
 .container {
@@ -73,17 +75,13 @@ table {
 }
 
 /**
- * Main App Template styles - header
+ * Main Page Header Palette
  */
-
-.appHeaderContainer {
-  /*position: fixed;*/
-}
 
 #appHeader {
   padding: 30px 0 10px 10px;
   height: 100%;
-  width: 970px;
+  width: 100%;
   text-align: center;
   font-size: 50px;
   margin-left: 125px;
@@ -95,7 +93,7 @@ table {
 }
 
 /**
- * Login Template styles - section container
+ * Login template styles - section container
  */
 
 .loginTemplate {
@@ -108,6 +106,10 @@ table {
     border-radius: 5px;
     background: linear-gradient(#8e9eab, #eef2f3);
 }
+
+/**
+ * Login form styles - username, password, and login button
+ */
 
 .loginForm input {
   height: 30px;
@@ -169,6 +171,10 @@ table {
     background: linear-gradient(#8e9eab, #eef2f3);
 }
 
+/**
+ * Signin form styles - username, password, and login button
+ */
+
 .signUpForm input {
   height: 30px;
   width: 380px;
@@ -221,7 +227,7 @@ table {
  */
 
 /**
- * Headers
+ * Headers - this style affects all header tags
  */
 
 h1 {
@@ -248,13 +254,20 @@ h2 {
     margin-bottom: 20px;
 }
 
+.chatroom h1 {
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 20px;
+    text-align: center;
+}
+
 /**
- * Chat color swatch 
+ * Chat buttons color 
  */
 
 .buttons {
   float: left;
-  /*padding: 20px 20px;*/
   height: 100%;
   width: 99%;
   background-color: #f2f2f2;
@@ -264,6 +277,7 @@ h2 {
     * Individual browser styles
     * For browsers that do not support gradients 
     */
+
   background: #8e9eab; 
   /**
    * For Safari 5.1 to 6.0 
@@ -302,7 +316,7 @@ h2 {
  * Set the background color of each button in nav bar
  */
 
-#all {
+#all, #logout {
     background-color: none;
     font-size: large;
 }
@@ -311,14 +325,17 @@ h2 {
     background-color: red;
     font-size: large;
 }
+
 #blue {
     background-color: blue;
     font-size: large;
 }
+
 #green {
     background-color: green;
     font-size: large;
 }
+
 #yellow {
     background-color: yellow;
     font-size: large;
@@ -326,10 +343,6 @@ h2 {
 
 /**
  * Display chatroom messages
- */
-
-/**
- * Test data
  */
 
 .scrollable {
@@ -367,17 +380,13 @@ ul {
     width: 970px;
 }
 
-#messages {
-
-}
-
 .messagelisting {
     float: left;
     background-color: gray;
 }
 
 /**
- * Display current chat messages from the server
+ * Styles each message
  */
 
 .singlemessage {
@@ -452,6 +461,5 @@ ul {
 #sendoptions {
     font-size: 25px;
     color: #595959;
-    /*padding-left: 13px;*/
     float: left;
 }
