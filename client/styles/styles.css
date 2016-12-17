@@ -70,8 +70,10 @@ table {
 
 .container {
     margin: 0 auto;
-    width: 980px;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    background: linear-gradient(#8e9eab, #eef2f3);
 }
 
 /**
