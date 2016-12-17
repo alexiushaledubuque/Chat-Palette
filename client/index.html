@@ -4,14 +4,19 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
     <title>Chat Palette</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- required file for date/time functionality -->
     <link href='styles/styles.css' type='text/css' rel='stylesheet'/>
     <script src="http://momentjs.com/downloads/moment.js"></script>
   </head>
   <body>
-    <section class='appHeaderContainer'>
-        <h1 id='appHeader' ng-style="{'background-image': 'url(/assets/top-bar.jpg)'}"><span class='appTitle'>WELCOME TO CHAT PALETTE</span></h1>
-    </section>
+    <div class="row">
+        <div class="col-md-12">
+            <section class='appHeaderContainer'>
+                <h1 id='appHeader' ng-style="{'background-image': 'url(/assets/top-bar.jpg)'}"><span class='appTitle'>WELCOME TO CHAT PALETTE</span></h1>
+            </section>
+        </div>
+    </div>
     <!-- render templates to this main html -->
     <div ng-view></div>
 
